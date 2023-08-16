@@ -8,8 +8,10 @@ export default function App() {
   function handleChange(event){
     setName(event.target.value)
   }
-  function hanldeClick(){
+  function hanldeClick(event){
     setHeadingText(name)
+
+    event.preventDefault();
   }
 
    
